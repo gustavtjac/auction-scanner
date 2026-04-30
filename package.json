@@ -1,0 +1,15 @@
+{
+  "name": "auction-scanner",
+  "version": "1.0.0",
+  "description": "Daily bankruptcy auction scanner",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "scrape": "node -e \"require('./scrapers/auktionshuset')().then(r => console.log(JSON.stringify(r, null, 2)))\""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.44.0",
+    "resend": "^3.2.0"
+  }
+}

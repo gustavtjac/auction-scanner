@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:auktionshuset.dk)",
+      "Bash(node scrape.js)",
+      "Bash(node -e ' *)",
+      "Bash(node mailer.js)",
+      "Bash(node *)",
+      "WebFetch(domain:www.lauritz.com)"
+    ]
+  }
+}
